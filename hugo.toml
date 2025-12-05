@@ -34,6 +34,9 @@ title = "Zion Sheng"
 
   # Resource URL for the site avatar (home page and header)
   avatarurl = "/images/portrait_v2022.webp"
+  
+  # Resource URL for the header/navigation avatar (top-left)
+  headerAvatarUrl = "/images/seal.webp"
 
   # Describe the avatar for screen readers
   avatarAltText = "avatar"
