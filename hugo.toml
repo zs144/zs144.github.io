@@ -1,3 +1,84 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = "https://zs144.github.io"
+defaultContentLanguage = "en"
+# Automatically generate robots.txt
+enableRobotsTXT = true
+languageCode = "en"
+theme = "gokarna"
+title = "Zion Sheng"
+
+[menu]
+  [[menu.main]]
+    # Display name
+    name = "Posts"
+
+    # Relative URL slug (appended to baseURL)
+    url = "/posts/"
+
+    # Lower weights are listed first in the menu (leftmost); higher weights are
+    # listed last in the menu (rightmost)
+    weight = 1
+
+  [[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 2
+
+  [[menu.main]]
+    name = "Resume"
+    url = "/resume/"
+    weight = 3
+
+[params]
+  # Choose the color shown when hyperlinks are hovered over
+  accentColor = "#FFD100"
+
+  # Resource URL for the site avatar (home page and header)
+  avatarurl = "/images/portrait_v2022.webp"
+
+  # Describe the avatar for screen readers
+  avatarAltText = "avatar"
+
+  # Set the avatar's size: size-xs, size-s, size-m, size-l & size-xl
+  avatarSize = "size-m"
+
+  # Inject arbitrary HTML via the <head> tag
+  # Best used for importing custom JavaScript, CSS, or analytics
+  customHeadHTML = ""
+
+  # Configure how post dates are displayed
+  dateFormat = "January 2, 2006"
+
+  # Home page meta description
+  description = "A junior researcher in computational genomics and multi-omics."
+
+  # Footer text (i.e. author/project name)
+  footer = "Zion Sheng"
+
+  # Define SEO keywords
+  metaKeywords = ["blog", "gokarna", "hugo"]
+
+  # Define how many posts are displayed on the home page
+  # showPostsOnHomePage must be "popular" or "recent"
+  numberPostsOnHomePage = 4
+
+  # Display a "back to top" button on posts and pages: true, false
+  # May not render on smaller screen sizes
+  showBackToTopButton = true
+
+  # Display posts on the home page:
+  # "popular" (order posts by weight)
+  # "recent" (order posts by date)
+  # "", unset (do not display)
+  showPostsOnHomePage = ""
+
+  # Show the previous and next post in your timeline: "true", "false"
+  # Incompatible with Weight
+  togglePreviousAndNextButtons = false
+
+  # Social media icons displayed on the home page
+  socialIcons = [
+    {name = "github", url = "https://github.com/zs144"},
+    {name = "envelope", url = "mailto:zionsheng@hotmail.com"},
+    {name = "scholar", url = "https://scholar.google.com/citations?user=GaNr_3kAAAAJ&hl=en"},
+    {name = "orcid", url = "https://orcid.org/0009-0006-7485-9901"}
+  ]
