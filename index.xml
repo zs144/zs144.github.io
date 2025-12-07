@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zion Sheng</title>
+    <link>https://zs144.github.io/</link>
+    <description>Recent content on Zion Sheng</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://zs144.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Zion Sheng - Resume</title>
+      <link>https://zs144.github.io/resume/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://zs144.github.io/resume/</guid>
+      <description>Resume Content This file contains the structured data for your BelResume template. The actual layout and styling is handled by the custom layout template.</description>
+    </item>
+  </channel>
+</rss>
