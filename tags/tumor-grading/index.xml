@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tumor Grading on Zion Sheng</title>
+    <link>https://zs144.github.io/tags/tumor-grading/</link>
+    <description>Recent content in Tumor Grading on Zion Sheng</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 20 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://zs144.github.io/tags/tumor-grading/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Attention-based Multiple Instance Learning of Head and Neck Cancer Grading on Digital Pathology Using Vision-language Foundation Models</title>
+      <link>https://zs144.github.io/research/project-two/</link>
+      <pubDate>Sun, 20 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://zs144.github.io/research/project-two/</guid>
+      <description>Adapted Vision-Language Foundational Models (VLFM) to perform interpretable HNSCC tumor grading on H&amp;amp;E whole slide images (WSI) via attention-based multiple instance learning.</description>
+    </item>
+  </channel>
+</rss>

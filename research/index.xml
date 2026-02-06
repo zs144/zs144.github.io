@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Research [under active construction] on Zion Sheng</title>
+    <link>https://zs144.github.io/research/</link>
+    <description>Recent content in Research [under active construction] on Zion Sheng</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 05 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://zs144.github.io/research/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PinFuse: Diffusion-Aware Denoising for Spatial Transcriptomics [Ongoing]</title>
+      <link>https://zs144.github.io/research/project-four/</link>
+      <pubDate>Thu, 05 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://zs144.github.io/research/project-four/</guid>
+      <description>PinFuse reduces diffusion-induced noise in spatial transcriptomics data, allowing users to recover higher-fidelity gene expression signals and achieve more accurate downstream analyses.</description>
+    </item>
+    <item>
+      <title>SemiSeg: A Novel Graph-based Cell Typing Algorithm for Subcellular High-resolution Spatial Transcriptomics Data [Ongoing]</title>
+      <link>https://zs144.github.io/research/project-three/</link>
+      <pubDate>Thu, 05 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://zs144.github.io/research/project-three/</guid>
+      <description>Developed a new method that incorporates cell boundary constraints to guide neighbor-aware cell typing, resulting in more accurate single-cell gene expression profiles.</description>
+    </item>
+    <item>
+      <title>Attention-based Multiple Instance Learning of Head and Neck Cancer Grading on Digital Pathology Using Vision-language Foundation Models</title>
+      <link>https://zs144.github.io/research/project-two/</link>
+      <pubDate>Sun, 20 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://zs144.github.io/research/project-two/</guid>
+      <description>Adapted Vision-Language Foundational Models (VLFM) to perform interpretable HNSCC tumor grading on H&amp;amp;E whole slide images (WSI) via attention-based multiple instance learning.</description>
+    </item>
+    <item>
+      <title>Is Self-Supervised Pre-training on Satellite Imagery Better than ImageNet? A Systematic Study with Sentinel-2</title>
+      <link>https://zs144.github.io/research/project-one/</link>
+      <pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://zs144.github.io/research/project-one/</guid>
+      <description>Systematically evaluated self-supervised pre-training on in-domain versus out-of-domain foundational datasets for downstream tasks in satellite imagery.</description>
+    </item>
+  </channel>
+</rss>

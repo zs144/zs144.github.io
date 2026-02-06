@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Deep Learning on Zion Sheng</title>
+    <link>https://zs144.github.io/tags/deep-learning/</link>
+    <description>Recent content in Deep Learning on Zion Sheng</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 20 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://zs144.github.io/tags/deep-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Attention-based Multiple Instance Learning of Head and Neck Cancer Grading on Digital Pathology Using Vision-language Foundation Models</title>
+      <link>https://zs144.github.io/research/project-two/</link>
+      <pubDate>Sun, 20 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://zs144.github.io/research/project-two/</guid>
+      <description>Adapted Vision-Language Foundational Models (VLFM) to perform interpretable HNSCC tumor grading on H&amp;amp;E whole slide images (WSI) via attention-based multiple instance learning.</description>
+    </item>
+    <item>
+      <title>Is Self-Supervised Pre-training on Satellite Imagery Better than ImageNet? A Systematic Study with Sentinel-2</title>
+      <link>https://zs144.github.io/research/project-one/</link>
+      <pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://zs144.github.io/research/project-one/</guid>
+      <description>Systematically evaluated self-supervised pre-training on in-domain versus out-of-domain foundational datasets for downstream tasks in satellite imagery.</description>
+    </item>
+  </channel>
+</rss>

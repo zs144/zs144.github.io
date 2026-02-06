@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FFB81C;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>SemiSeg: A Novel Graph-based Cell Typing Algorithm for Subcellular High-resolution Spatial Transcriptomics Data [Ongoing]</title>
+    <meta name="description" content="Developed a new method that incorporates cell boundary constraints to guide neighbor-aware cell typing, resulting in more accurate single-cell gene expression …">
+    <meta name="keywords" content='blog, gokarna, hugo, spatial transcriptomics, graph nerual network, cell typing, cell segmentation'>
+
+    <meta property="og:url" content="https://zs144.github.io/research/project-three/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SemiSeg: A Novel Graph-based Cell Typing Algorithm for Subcellular High-resolution Spatial Transcriptomics Data [Ongoing]">
+    <meta property="og:description" content="Developed a new method that incorporates cell boundary constraints to guide neighbor-aware cell typing, resulting in more accurate single-cell gene expression …">
+    <meta property="og:image" content="https://zs144.github.io/images/projects/SemiSeg.webp">
+    <meta property="og:image:secure_url" content="https://zs144.github.io/images/projects/SemiSeg.webp">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SemiSeg: A Novel Graph-based Cell Typing Algorithm for Subcellular High-resolution Spatial Transcriptomics Data [Ongoing]">
+    <meta name="twitter:description" content="Developed a new method that incorporates cell boundary constraints to guide neighbor-aware cell typing, resulting in more accurate single-cell gene expression …">
+    <meta property="twitter:domain" content="https://zs144.github.io/research/project-three/">
+    <meta property="twitter:url" content="https://zs144.github.io/research/project-three/">
+    <meta name="twitter:image" content="https://zs144.github.io/images/projects/SemiSeg.webp">
+
+    
+    <link rel="canonical" href="https://zs144.github.io/research/project-three/">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.0f3234e6794e69178447e88d1ffc8b5991b5b64e217f1e4ac4c93abe744e7a3c.js" integrity="sha256-DzI05nlOaReER&#43;iNH/yLWZG1tk4hfx5KxMk6vnROejw="></script>
+
+    
+    
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar header-avatar">
+            <a href="https://zs144.github.io/">
+                
+                <img src='/images/seal.webp' alt="avatar">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://zs144.github.io/">Zion Sheng</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://zs144.github.io/resume/" aria-label="" > Resume </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://zs144.github.io/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://zs144.github.io/tutorials/" aria-label="" > Tutorials </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://zs144.github.io/tools/" aria-label="" > Tools </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://zs144.github.io/tags/" aria-label="" > Tags </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://zs144.github.io/resume/" > Resume </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://zs144.github.io/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://zs144.github.io/tutorials/" > Tutorials </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://zs144.github.io/tools/" > Tools </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://zs144.github.io/tags/" > Tags </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+<style>
+  main#content > .container {
+    width: 85%;
+    max-width: 1024px;
+  }
+
+  .project-header {
+    margin-bottom: 32px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .project-title {
+    font-size: 2rem;
+    margin-bottom: 8px;
+    line-height: 1.3;
+    font-weight: bold;
+  }
+
+  .project-meta {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-top: 16px;
+    font-size: 0.95rem;
+  }
+
+  .project-meta-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .project-meta-label {
+    color: #888;
+    font-weight: 500;
+  }
+
+  .project-meta-value {
+    color: #012169;
+    font-weight: 600;
+  }
+
+  .project-image {
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(135deg, rgba(255, 184, 28, 0.1), rgba(255, 184, 28, 0.05));
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    margin-bottom: 32px;
+    overflow: hidden;
+  }
+
+  .project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .project-content {
+    font-size: 0.95rem;
+    line-height: 1.8;
+  }
+
+  .project-content h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 28px;
+    margin-bottom: 16px;
+    color: #012169;
+  }
+
+  .project-content h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    color: #012169;
+  }
+
+  .project-content p {
+    margin-bottom: 16px;
+    color: #666;
+  }
+
+  .project-content ul,
+  .project-content ol {
+    margin-bottom: 16px;
+    padding-left: 28px;
+  }
+
+  .project-content li {
+    margin-bottom: 8px;
+    color: #666;
+  }
+
+  .project-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 24px 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .project-content table thead {
+    background-color: rgba(1, 33, 105, 0.05);
+  }
+
+  .project-content table th,
+  .project-content table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .project-content table th {
+    font-weight: 600;
+    color: #012169;
+  }
+
+  .project-content code {
+    background-color: rgba(1, 33, 105, 0.05);
+    color: #012169;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+  }
+
+  .project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 24px;
+  }
+
+  .project-tag {
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    background-color: rgba(1, 33, 105, 0.15);
+    color: #012169;
+  }
+
+  .back-link {
+    display: inline-block;
+    margin-bottom: 24px;
+    color: #012169;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+  }
+
+  .back-link:hover {
+    color: var(--accent-color);
+  }
+
+  .back-link::before {
+    content: "← ";
+    margin-right: 4px;
+  }
+</style>
+
+<div class="container">
+    <a href="/research/" class="back-link">Back to Research</a>
+
+    <div class="project-header">
+        <h1 class="project-title">SemiSeg: A Novel Graph-based Cell Typing Algorithm for Subcellular High-resolution Spatial Transcriptomics Data [Ongoing]</h1>
+        <div class="project-meta">
+            <div class="project-meta-item">
+                <span class="project-meta-label">Published:</span>
+                <span class="project-meta-value">February 5, 2026</span>
+            </div>
+            
+            <div class="project-meta-item">
+                <span class="project-meta-label">Status:</span>
+                <span class="project-meta-value">Ongoing</span>
+            </div>
+            
+        </div>
+    </div>
+
+    
+    <div class="project-image">
+        <img src="/images/projects/SemiSeg.webp" alt="SemiSeg: A Novel Graph-based Cell Typing Algorithm for Subcellular High-resolution Spatial Transcriptomics Data [Ongoing]">
+    </div>
+    
+
+    <div class="project-content">
+        <h2 id="overview">Overview</h2>
+<p>TODO</p>
+<h2 id="problem-statement">Problem Statement</h2>
+<p>TODO</p>
+<h2 id="key-results">Key Results</h2>
+<p>TODO</p>
+<h2 id="technologies-used">Technologies Used</h2>
+<p>TODO</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>TODO</p>
+
+    </div>
+
+    
+    <div class="project-tags">
+        
+            <span class="project-tag">spatial transcriptomics</span>
+        
+            <span class="project-tag">graph nerual network</span>
+        
+            <span class="project-tag">cell typing</span>
+        
+            <span class="project-tag">cell segmentation</span>
+        
+    </div>
+    
+</div>
+
+        </main><footer class="footer">
+    
+    
+
+    <span style="opacity: 0.7; font-size: 0.75rem;">&copy; 2026 Zion Sheng. All rights reserved.</span>
+</footer>
+</body>
+</html>

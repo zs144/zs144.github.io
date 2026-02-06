@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Graph Model on Zion Sheng</title>
+    <link>https://zs144.github.io/tags/graph-model/</link>
+    <description>Recent content in Graph Model on Zion Sheng</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 05 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://zs144.github.io/tags/graph-model/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PinFuse: Diffusion-Aware Denoising for Spatial Transcriptomics [Ongoing]</title>
+      <link>https://zs144.github.io/research/project-four/</link>
+      <pubDate>Thu, 05 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://zs144.github.io/research/project-four/</guid>
+      <description>PinFuse reduces diffusion-induced noise in spatial transcriptomics data, allowing users to recover higher-fidelity gene expression signals and achieve more accurate downstream analyses.</description>
+    </item>
+  </channel>
+</rss>

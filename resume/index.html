@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zion Sheng - Resume</title>
+    <meta
+      name="description"
+      content="Professional resume of Zion Sheng"
+    />
+
+    
+    <script>
+      (function () {
+        const savedDarkMode = localStorage.getItem("resumeDarkMode");
+        const theme =
+          savedDarkMode !== null
+            ? savedDarkMode === "true"
+              ? "dark"
+              : "light"
+            : window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        if (theme === "dark") {
+          document.documentElement.setAttribute("data-theme", "dark");
+        }
+      })();
+    </script>
+
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    
+    
+    <script src="/js/feather-icons.min.min.js"></script>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    
+    
+    <link rel="stylesheet" href="/css/resume-main.min.css" />
+
+    
+    <link rel="stylesheet" href="/css/resume-navigation.min.css" />
+
+    
+    <link rel="stylesheet" href="/css/resume-modals.min.css" />
+  </head>
+  <body
+    class="transition-colors duration-300"
+    style="font-family: 'Lato', sans-serif"
+  >
+    
+    <header class="header">
+      <nav class="header-nav">
+        <div class="avatar header-avatar">
+          <a href="https://zs144.github.io/">
+            <img
+              src="/images/seal.webp"
+              alt="avatar"
+            />
+          </a>
+        </div>
+
+        <div class="nav-title">
+          <a class="nav-brand" href="https://zs144.github.io/">Zion Sheng</a>
+        </div>
+
+        <div class="nav-links">
+          
+          <div class="nav-link">
+            <a
+              href="https://zs144.github.io/resume/"
+              
+            >
+              Resume
+            </a>
+          </div>
+          
+          <div class="nav-link">
+            <a
+              href="https://zs144.github.io/research/"
+              
+            >
+              Research
+            </a>
+          </div>
+          
+          <div class="nav-link">
+            <a
+              href="https://zs144.github.io/tutorials/"
+              
+            >
+              Tutorials
+            </a>
+          </div>
+          
+          <div class="nav-link">
+            <a
+              href="https://zs144.github.io/tools/"
+              
+            >
+              Tools
+            </a>
+          </div>
+          
+          <div class="nav-link">
+            <a
+              href="https://zs144.github.io/tags/"
+              
+            >
+              Tags
+            </a>
+          </div>
+          
+
+          <span class="nav-icons-divider"></span>
+          <div class="nav-link icon dark-theme-toggle">
+            <span class="sr-only dark-theme-toggle-screen-reader-target"
+              >theme</span
+            >
+            <a aria-hidden="true" role="switch" style="cursor: pointer">
+              <span class="theme-toggle-icon" data-feather="moon"></span>
+            </a>
+          </div>
+
+          <div class="nav-link icon" id="hamburger-menu-toggle">
+            <span class="sr-only hamburger-menu-toggle-screen-reader-target"
+              >menu</span
+            >
+            <a
+              aria-checked="false"
+              aria-labelledby="hamburger-menu-toggle"
+              id="hamburger-menu-toggle-target"
+              role="switch"
+              style="cursor: pointer"
+            >
+              <span data-feather="menu"></span>
+            </a>
+          </div>
+
+          
+          <ul class="nav-hamburger-list visibility-hidden">
+            
+            <li class="nav-item">
+              <a
+                href="https://zs144.github.io/resume/"
+                
+              >
+                Resume
+              </a>
+            </li>
+            
+            <li class="nav-item">
+              <a
+                href="https://zs144.github.io/research/"
+                
+              >
+                Research
+              </a>
+            </li>
+            
+            <li class="nav-item">
+              <a
+                href="https://zs144.github.io/tutorials/"
+                
+              >
+                Tutorials
+              </a>
+            </li>
+            
+            <li class="nav-item">
+              <a
+                href="https://zs144.github.io/tools/"
+                
+              >
+                Tools
+              </a>
+            </li>
+            
+            <li class="nav-item">
+              <a
+                href="https://zs144.github.io/tags/"
+                
+              >
+                Tags
+              </a>
+            </li>
+            
+            <li class="nav-item dark-theme-toggle">
+              <span class="sr-only dark-theme-toggle-screen-reader-target"
+                >theme</span
+              >
+              <a aria-hidden="true" role="switch" style="cursor: pointer">
+                <span class="theme-toggle-icon" data-feather="moon"></span>
+                Toggle Theme
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    
+
+    <div class="container mx-auto px-4 py-8 max-w-5xl main-content">
+      
+      <header
+        class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-6"
+      >
+        <div>
+          <h1 class="text-3xl font-bold mb-1">Zion Sheng</h1>
+          <h2 class="text-xl font-semibold mb-2" style="color: var(--primary)">
+            Junior Researcher in Computational Genomics and Multi-Omics
+          </h2>
+          <p class="text-sm opacity-80 max-w-lg">
+            Passionate researcher with a solid research experience in omics,
+            machine learning, deep learning, and medical images. Dedicated to
+            uncovering biological insights and inform translational applications
+            through innovative computational approaches.
+          </p>
+        </div>
+        <div class="flex flex-col items-end md:items-end self-end md:self-auto">
+          <div class="flex items-center mb-2">
+            <i class="fas fa-envelope mr-2" style="color: var(--primary)"></i>
+            <span class="text-sm"
+              ><a href="mailto:zion.sheng@duke.edu" title="My Email"
+                >zion.sheng@duke.edu</a
+              ></span
+            >
+          </div>
+          <div class="flex items-center mb-2">
+            <i class="fab fa-github mr-2" style="color: var(--primary)"></i>
+            <span class="text-sm"
+              ><a href="https://github.com/zs144" target="_blank" title="My GitHub"
+                >github.com/zs144</a
+              ></span
+            >
+          </div>
+          <div class="flex items-center mb-2">
+            <i class="fas fa-globe mr-2" style="color: var(--primary)"></i>
+            <span class="text-sm"
+              ><a href="https://zs144.github.io" target="_blank" title="My website"
+                >zs144.github.io</a
+              ></span
+            >
+          </div>
+          <div class="flex items-center">
+            <i class="fab fa-orcid mr-2" style="color: var(--primary)"></i>
+            <span class="text-sm"
+              ><a href="https://orcid.org/0009-0006-7485-9901" target="_blank" title="My ORCID"
+                >0009-0006-7485-9901</a
+              ></span
+            >
+          </div>
+        </div>
+      </header>
+
+      
+      <section class="resume-section p-6 rounded-lg shadow-sm mb-8">
+        <h2
+          class="text-xl font-bold mb-4 border-b pb-2"
+          style="border-color: var(--primary)"
+        >
+          Research Interests
+        </h2>
+        <p class="text-sm leading-relaxed">
+          Computational Biomedicine, Spatial Transcriptomics, Multi-omics,
+          Single-cell Omics, Multi-modal Learning, Graph Learning, Digital
+          Pathology, Computer Vision, Foundational Models, Deep Learning.
+        </p>
+      </section>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        
+        <div class="lg:col-span-2 space-y-8">
+          
+          <section class="resume-section p-6 rounded-lg shadow-sm">
+            <h2
+              class="text-xl font-bold mb-4 border-b pb-2"
+              style="border-color: var(--primary)"
+            >
+              Research Experience
+            </h2>
+
+            <div class="mb-6">
+              <div class="flex justify-between items-start">
+                <h3 class="font-semibold">Research Technician II</h3>
+                <span
+                  class="text-xs px-2 py-1 rounded"
+                  style="background-color: var(--primary)"
+                  >May 2025 - Present</span
+                >
+              </div>
+              <p class="text-sm mb-2" style="color: var(--primary)">
+                Duke University, Zhang Lab (Neurosurgery), Durham, NC
+              </p>
+              <ul class="list-disc list-outside text-sm space-y-1 pl-5">
+                <li>
+                  Developing a novel graph-based model for integrating
+                  image-based cell segmentation with high-resolution spatial
+                  transcriptomics (ST) to perform subcellular spot-level cell
+                  type inference
+                </li>
+                <li>
+                  Built SegOST: an image-based cell segmentation and annotation
+                  pipeline that finetunes StarDist for various cell populations
+                  in Visium HD samples
+                </li>
+                <li>
+                  Applied MetaTiME for cell state annotation on scRNA data to
+                  examine circadian gene expression in breast cancer tumor hubs
+                </li>
+                <li>
+                  Created tools for omics data visualization, spot-to-cell
+                  aggregation, and ST data simulation, while maintaining the lab
+                  Wiki and wrote numerous tutorials
+                </li>
+              </ul>
+            </div>
+
+            <div class="mb-6">
+              <div class="flex justify-between items-start">
+                <h3 class="font-semibold">Part-time Research Assistant</h3>
+                <span
+                  class="text-xs px-2 py-1 rounded"
+                  style="background-color: var(--primary)"
+                  >Jan 2024 - July 2025</span
+                >
+              </div>
+              <p class="text-sm mb-2" style="color: var(--primary)">
+                Duke University, Lafata Lab (Radiation Oncology), Durham, NC
+              </p>
+              <ul class="list-disc list-outside text-sm space-y-1 pl-5">
+                <li>
+                  Preprocessed images via QuPath and OpenSlide. Computed image
+                  features in CellProfiler
+                </li>
+                <li>
+                  Adapted Vision-Language Models for head and neck squamous cell
+                  carcinoma tumor grading on H&E-stained whole slide images via
+                  multiple instance learning
+                </li>
+                <li>
+                  Conducted interpretable model inference correlating attention
+                  scores with text-based conceptual, morphological, and
+                  graphical features.
+                </li>
+                <li>
+                  First-author oral presentation at AAPM 2025 Annual Meeting &
+                  Exhibition
+                </li>
+              </ul>
+            </div>
+
+            <div class="mb-6">
+              <div class="flex justify-between items-start">
+                <h3 class="font-semibold">Research Technician</h3>
+                <span
+                  class="text-xs px-2 py-1 rounded"
+                  style="background-color: var(--primary)"
+                  >May 2024 - May 2025</span
+                >
+              </div>
+              <p class="text-sm mb-2" style="color: var(--primary)">
+                University of Missouri, Malof Lab (EECS), Columbia, MO
+              </p>
+              <ul class="list-disc list-outside text-sm space-y-1 pl-5">
+                <li>
+                  Comprehensively compared the in-domain vs out-of-domain
+                  self-supervised pre-training in remote sensing
+                </li>
+                <li>
+                  Trained SSL ViT models via Masked Autoencoder (MAE) on
+                  multiple in-domain and out-of-domain large-scale image
+                  datasets using multi-GPU parallel training
+                </li>
+                <li>
+                  Curated GeoNet: a diverse 1M+ satellite image database for
+                  self-supervised learning
+                </li>
+                <li>
+                  Published on ArXiv 2025, presented GeoNet at AGU 2024 Annual
+                  Meeting
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="flex justify-between items-start">
+                <h3 class="font-semibold">Research Intern</h3>
+                <span
+                  class="text-xs px-2 py-1 rounded"
+                  style="background-color: var(--primary)"
+                  >Aug 2023 - May 2024</span
+                >
+              </div>
+              <p class="text-sm mb-2" style="color: var(--primary)">
+                Duke University, Applied ML Lab (ECE), Durham, NC
+              </p>
+              <ul class="list-disc list-outside text-sm space-y-1 pl-5">
+                <li>
+                  Finetuned Segment Anything Model (SAM) for cloud segmentation
+                  in satellite images
+                </li>
+                <li>
+                  Reviewed algorithmic design of EEG-based Brain Computer
+                  Interface systems
+                </li>
+                <li>
+                  Developed a CNN model for P300 EEG data classification
+                  achieving performance on-par with traditional SWLDA
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          
+          <section class="resume-section p-6 rounded-lg shadow-sm">
+            <h2
+              class="text-xl font-bold mb-4 border-b pb-2"
+              style="border-color: var(--primary)"
+            >
+              Education
+            </h2>
+
+            <div class="mb-6">
+              <div class="flex justify-between items-start">
+                <h3 class="font-semibold">Advanced Bioscience Program</h3>
+                <span
+                  class="text-xs px-2 py-1 rounded"
+                  style="background-color: var(--primary)"
+                  >July 2025 - Present</span
+                >
+              </div>
+              <p class="text-sm mb-2" style="color: var(--primary)">
+                UC Berkeley Extension, Remote
+              </p>
+              <p class="text-sm">
+                CGPA: 4/4. Courses: Introductory Biology w/ Lab. Coming: Cell &
+                Molecular Biology (26sp), Genetics (26su), Modern-Omics:
+                Technologies & Applications.
+              </p>
+            </div>
+
+            <div class="mb-6">
+              <div class="flex justify-between items-start">
+                <h3 class="font-semibold">Master of Engineering in ECE</h3>
+                <span
+                  class="text-xs px-2 py-1 rounded"
+                  style="background-color: var(--primary)"
+                  >Aug 2022 - May 2024</span
+                >
+              </div>
+              <p class="text-sm mb-2" style="color: var(--primary)">
+                Duke University, Durham, USA
+              </p>
+              <p class="text-sm">
+                CGPA: 3.56/4 | PGPA: 3.75/4. Specialized in the AI/ML track with
+                a focus on computational biomedicine and computer vision, after
+                an initial semester in the less-aligned software track.
+              </p>
+            </div>
+
+            <div class="mb-6">
+              <div class="flex justify-between items-start">
+                <h3 class="font-semibold">Bachelor of Economics</h3>
+                <span
+                  class="text-xs px-2 py-1 rounded"
+                  style="background-color: var(--primary)"
+                  >Sep 2017 - Jun 2021</span
+                >
+              </div>
+              <p class="text-sm mb-2" style="color: var(--primary)">
+                Central University of Finance and Economics, Beijing, China
+              </p>
+              <p class="text-sm">CGPA: 3.82/4.</p>
+            </div>
+
+            <div>
+              <div class="flex justify-between items-start">
+                <h3 class="font-semibold">
+                  Undergraduate Summer Session Program
+                </h3>
+                <span
+                  class="text-xs px-2 py-1 rounded"
+                  style="background-color: var(--primary)"
+                  >2019, 2020 Summer</span
+                >
+              </div>
+              <p class="text-sm mb-2" style="color: var(--primary)">
+                University of California, Los Angeles (UCLA), Los Angeles, USA
+              </p>
+              <p class="text-sm"> CGPA: 3.75/4. Math, Statistics </p>
+            </div>
+          </section>
+
+          
+          <section class="resume-section p-6 rounded-lg shadow-sm">
+            <h2
+              class="text-xl font-bold mb-4 border-b pb-2"
+              style="border-color: var(--primary)"
+            >
+              Industry Experience
+            </h2>
+
+            <div class="mb-6">
+              <div class="flex justify-between items-start">
+                <h3 class="font-semibold">Researcher</h3>
+                <span
+                  class="text-xs px-2 py-1 rounded"
+                  style="background-color: var(--primary)"
+                  >May 2024 - May 2025</span
+                >
+              </div>
+              <p class="text-sm mb-2" style="color: var(--primary)">
+                ClimateTrace, Durham, NC
+              </p>
+              <ul class="list-disc list-outside text-sm space-y-1 pl-5">
+                <li>
+                  Developed the first high-resolution GHG emission estimates for
+                  global building sector
+                </li>
+                <li>
+                  Led uncertainty analysis and designed ML methods to improve
+                  emission estimates accuracy
+                </li>
+                <li>
+                  Created Python visualization package for emission spatial data
+                  illustration and quality checks
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="flex justify-between items-start">
+                <h3 class="font-semibold">Data Analyst Intern</h3>
+                <span
+                  class="text-xs px-2 py-1 rounded"
+                  style="background-color: var(--primary)"
+                  >Dec 2020 - Apr 2021</span
+                >
+              </div>
+              <p class="text-sm mb-2" style="color: var(--primary)">
+                DiDi, Beijing, China
+              </p>
+              <ul class="list-disc list-outside text-sm space-y-1 pl-5">
+                <li>
+                  Built automatic workflow for data querying and business
+                  indicator computing
+                </li>
+                <li>
+                  Delivered daily market reports and updated data dashboards
+                  using GitBook and Tableau
+                </li>
+                <li>
+                  Improved coupon distribution effectiveness by 34% through
+                  cluster analysis
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          
+          <section class="resume-section p-6 rounded-lg shadow-sm">
+            <h2
+              class="text-xl font-bold mb-4 border-b pb-2"
+              style="border-color: var(--primary)"
+            >
+              Side Projects
+            </h2>
+
+            <div class="mb-6">
+              <div class="flex items-center gap-2 mb-1">
+                <h3 class="font-semibold">
+                  Intra-retinal Cyst Segmentation in OCT Images
+                </h3>
+                <a
+                  href="https://drive.google.com/drive/folders/1OUlM_YDdiehy9tqHMOCLNvLfcE3KeNM-?usp=sharing"
+                  target="_blank"
+                  class="text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded hover:bg-gray-200"
+                >
+                  <i class="fas fa-external-link-alt mr-1"></i>link
+                </a>
+              </div>
+              <p class="text-sm mb-2">
+                Applied pre-trained models (Swin Transformer, DeepLabv3 Plus,
+                MobileNetv3) for cyst segmentation on optical CT images via
+                transfer learning, achieving Dice scores of 0.41 (the Duke
+                dataset) and 0.81 (the UMN dataset).
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="text-xs px-2 py-1 rounded"
+                  style="
+                    background-color: var(--secondary);
+                    background-opacity: 0.2;
+                  "
+                  >Computer Vision</span
+                >
+                <span
+                  class="text-xs px-2 py-1 rounded"
+                  style="
+                    background-color: var(--secondary);
+                    background-opacity: 0.2;
+                  "
+                  >Transfer Learning</span
+                >
+                <span
+                  class="text-xs px-2 py-1 rounded"
+                  style="
+                    background-color: var(--secondary);
+                    background-opacity: 0.2;
+                  "
+                  >Medical Imaging</span
+                >
+              </div>
+            </div>
+
+            <div>
+              <div class="flex items-center gap-2 mb-1">
+                <h3 class="font-semibold">
+                  Text Summarization Comparative Analysis
+                </h3>
+                <a
+                  href="https://drive.google.com/drive/folders/1OXL3uq9bC9MVQSMDOtbOhGpK1BAOC8Qt?usp=sharing"
+                  target="_blank"
+                  class="text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded hover:bg-gray-200"
+                >
+                  <i class="fas fa-external-link-alt mr-1"></i>link
+                </a>
+              </div>
+              <p class="text-sm mb-2">
+                Evaluated multiple text summarizers (TF-IDF, BERT, BART,
+                T5-small) on CNN/DailyMail dataset across extractive and
+                abstractive regimes, with BART achieving highest ROUGE score.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="text-xs px-2 py-1 rounded"
+                  style="
+                    background-color: var(--secondary);
+                    background-opacity: 0.2;
+                  "
+                  >NLP</span
+                >
+                <span
+                  class="text-xs px-2 py-1 rounded"
+                  style="
+                    background-color: var(--secondary);
+                    background-opacity: 0.2;
+                  "
+                  >Text Summarization</span
+                >
+                <span
+                  class="text-xs px-2 py-1 rounded"
+                  style="
+                    background-color: var(--secondary);
+                    background-opacity: 0.2;
+                  "
+                  >Benchmarking</span
+                >
+              </div>
+            </div>
+          </section>
+        </div>
+
+        
+        <div class="space-y-8">
+          
+          <section class="resume-section p-6 rounded-lg shadow-sm">
+            <h2
+              class="text-xl font-bold mb-4 border-b pb-2 flex items-center gap-2"
+              style="border-color: var(--primary)"
+            >
+              Technical Skills
+              <div
+                class="help-icon"
+                onclick="showHelpModal()"
+                title="How are these values calculated?"
+              >
+                ?
+              </div>
+            </h2>
+
+            <div class="mb-4">
+              <h3 class="font-semibold text-sm mb-2">Python</h3>
+              <div class="skill-bar bg-gray-200" data-skill="80">
+                <div
+                  class="progress"
+                  style="width: 80%; background-color: var(--primary)"
+                ></div>
+                <div class="skill-tooltip">80%</div>
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <h3 class="font-semibold text-sm mb-2">R</h3>
+              <div class="skill-bar bg-gray-200" data-skill="40">
+                <div
+                  class="progress"
+                  style="width: 40%; background-color: var(--primary)"
+                ></div>
+                <div class="skill-tooltip">40%</div>
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <h3 class="font-semibold text-sm mb-2">ML & DL</h3>
+              <div class="skill-bar bg-gray-200" data-skill="80">
+                <div
+                  class="progress"
+                  style="width: 80%; background-color: var(--primary)"
+                ></div>
+                <div class="skill-tooltip">80%</div>
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <h3 class="font-semibold text-sm mb-2">
+                Single-cell and Spatial Transcriptomics
+              </h3>
+              <div class="skill-bar bg-gray-200" data-skill="60">
+                <div
+                  class="progress"
+                  style="width: 60%; background-color: var(--primary)"
+                ></div>
+                <div class="skill-tooltip">60%</div>
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <h3 class="font-semibold text-sm mb-2">Other Omics</h3>
+              <div class="skill-bar bg-gray-200" data-skill="20">
+                <div
+                  class="progress"
+                  style="width: 20%; background-color: var(--primary)"
+                ></div>
+                <div class="skill-tooltip">20%</div>
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <h3 class="font-semibold text-sm mb-2">Unix/Docker/Git</h3>
+              <div class="skill-bar bg-gray-200" data-skill="75">
+                <div
+                  class="progress"
+                  style="width: 75%; background-color: var(--primary)"
+                ></div>
+                <div class="skill-tooltip">75%</div>
+              </div>
+            </div>
+          </section>
+
+          
+          <section class="resume-section p-6 rounded-lg shadow-sm">
+            <h2
+              class="text-xl font-bold mb-4 border-b pb-2 flex items-center gap-2"
+              style="border-color: var(--primary)"
+            >
+              Core Abilities
+              <div
+                class="help-icon"
+                onclick="showCoreAbilitiesModal()"
+                title="How are these values scaled?"
+              >
+                ?
+              </div>
+            </h2>
+
+            <div class="relative" style="height: 280px">
+              <canvas id="abilitiesChart"></canvas>
+            </div>
+          </section>
+
+          
+          <section class="resume-section p-6 rounded-lg shadow-sm">
+            <h2
+              class="text-xl font-bold mb-4 border-b pb-2"
+              style="border-color: var(--primary)"
+            >
+              Research Impact
+            </h2>
+
+            <div class="relative" style="height: 280px">
+              <canvas id="metricsChart"></canvas>
+            </div>
+
+            <div class="flex justify-center text-xs mt-3 opacity-70">
+              <span>
+                Data from
+                <a
+                  href="https://scholar.google.com/citations?user=GaNr_3kAAAAJ&hl=en"
+                  target="_blank"
+                  class="underline"
+                  >Google Scholar</a
+                >
+                and
+                <a
+                  href="https://github.com/zs144"
+                  target="_blank"
+                  class="underline"
+                  >GitHub</a
+                >
+              </span>
+            </div>
+          </section>
+
+          
+          <section class="resume-section p-6 rounded-lg shadow-sm">
+            <h2
+              class="text-xl font-bold mb-4 border-b pb-2"
+              style="border-color: var(--primary)"
+            >
+              Publications & Presentations
+            </h2>
+
+            <div class="mb-4">
+              <h3 class="font-semibold text-sm">
+                Estimating Global, High-resolution Onsite Building Sector
+                Greenhouse Gas Emissions
+              </h3>
+              <p class="text-xs" style="color: var(--primary)">
+                NPJ Urban Sustainability 2025 (Under review)
+              </p>
+            </div>
+
+            <div class="mb-4">
+              <h3 class="font-semibold text-sm">
+                Attention-Based Multiple Instance Learning of Head and Neck
+                Cancer Grading
+              </h3>
+              <p class="text-xs" style="color: var(--primary)">
+                AAPM 2025 Annual Meeting (Oral Presentation)
+              </p>
+              <div class="flex gap-2 mt-1">
+                <a
+                  href="https://aapm.confex.com/aapm/2025am/meetingapp.cgi/Paper/16146"
+                  target="_blank"
+                  class="text-xs px-2 py-1 bg-blue-100 text-blue-600 rounded hover:bg-blue-200"
+                  >abstract</a
+                >
+                <a
+                  href="https://drive.google.com/file/d/1FFsLeBG_lC1p_Ry5TriY223f57UTz8Nb/view?usp=sharing"
+                  target="_blank"
+                  class="text-xs px-2 py-1 bg-green-100 text-green-600 rounded hover:bg-green-200"
+                  >presentation</a
+                >
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <h3 class="font-semibold text-sm">
+                Is self-supervised pre-training on satellite imagery better than
+                Imagenet?
+              </h3>
+              <p class="text-xs" style="color: var(--primary)">
+                arXiv preprint 2025
+              </p>
+              <div class="flex gap-2 mt-1">
+                <a
+                  href="https://arxiv.org/abs/2502.10669"
+                  target="_blank"
+                  class="text-xs px-2 py-1 bg-red-100 text-red-600 rounded hover:bg-red-200"
+                  >ArXiv</a
+                >
+              </div>
+            </div>
+
+            <div>
+              <h3 class="font-semibold text-sm">
+                GeoNet: A Global Dataset and Foundation Model for Deep Learning
+              </h3>
+              <p class="text-xs" style="color: var(--primary)">
+                AGU 2024 Annual Meeting
+              </p>
+              <div class="flex gap-2 mt-1">
+                <a
+                  href="https://agu24.ipostersessions.com/default.aspx?s=B9-2B-4C-9D-21-84-2D-08-75-AA-12-17-CA-16-20-AC&guestview=true"
+                  target="_blank"
+                  class="text-xs px-2 py-1 bg-purple-100 text-purple-600 rounded hover:bg-purple-200"
+                  >poster</a
+                >
+              </div>
+            </div>
+          </section>
+
+          
+          <section class="resume-section p-6 rounded-lg shadow-sm">
+            <h2
+              class="text-xl font-bold mb-4 border-b pb-2"
+              style="border-color: var(--primary)"
+            >
+              Awards & Honors
+            </h2>
+
+            <div class="mb-3">
+              <h3 class="font-semibold text-sm">Sigma Xi Associate Member</h3>
+              <p class="text-xs" style="color: var(--primary)">2025</p>
+            </div>
+
+            <div>
+              <h3 class="font-semibold text-sm">
+                AAPM 2025 Science Council Session Finalist
+              </h3>
+              <p class="text-xs" style="color: var(--primary)">2025</p>
+            </div>
+          </section>
+
+          
+          <section class="resume-section p-6 rounded-lg shadow-sm">
+            <h2
+              class="text-xl font-bold mb-4 border-b pb-2"
+              style="border-color: var(--primary)"
+            >
+              Teaching Experience
+            </h2>
+
+            <div class="mb-3">
+              <h3 class="font-semibold text-sm">Teaching Assistant</h3>
+              <p class="text-xs mb-1" style="color: var(--primary)">
+                Duke University Graduate School
+              </p>
+              <ul class="list-disc list-outside text-xs space-y-1 pl-5">
+                <li>ECE 580: Intro to Machine Learning (24sp)</li>
+                <li>DECISION 523: Fraud Analysis with R (23fa)</li>
+                <li>QM 523: Fraud Analysis with R (23fa)</li>
+                <li>DECISION 563: Programming for Data Analytics (23su)</li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      
+      <footer class="mt-8 text-center text-xs opacity-70">
+        <p>&copy; 2026 Zion Sheng. All rights reserved.</p>
+      </footer>
+    </div>
+
+    
+    <div id="helpModal" class="help-modal">
+      <div class="help-modal-content">
+        <button class="help-close" onclick="hideHelpModal()">&times;</button>
+        <h3
+          style="
+            margin-bottom: 16px;
+            color: var(--primary);
+            font-size: 18px;
+            font-weight: bold;
+          "
+        >
+          How Technical Skills Are Calculated
+        </h3>
+
+        <div style="space-y: 12px">
+          <div style="margin-bottom: 12px">
+            <strong style="color: var(--primary)">Python (80%):</strong>
+            <p style="font-size: 14px; margin-top: 4px">
+              5+ years experience, advanced libraries (PyTorch, TensorFlow,
+              scikit-learn), production deployment, and teaching experience.
+            </p>
+          </div>
+
+          <div style="margin-bottom: 12px">
+            <strong style="color: var(--primary)">R (40%):</strong>
+            <p style="font-size: 14px; margin-top: 4px">
+              Intermediate level for data analysis, visualization, and
+              bioinformatics.
+            </p>
+          </div>
+
+          <div style="margin-bottom: 12px">
+            <strong style="color: var(--primary)">ML & DL (80%):</strong>
+            <p style="font-size: 14px; margin-top: 4px">
+              Strong foundation in both supervised/unsupervised learning, deep
+              learning architectures, computer vision, and research
+              publications.
+            </p>
+          </div>
+
+          <div style="margin-bottom: 12px">
+            <strong style="color: var(--primary)"
+              >Single-cell and Spatial Transcriptomics (60%):</strong
+            >
+            <p style="font-size: 14px; margin-top: 4px">
+              Hands-on research experience, familiar with analysis pipelines,
+              but still developing expertise in advanced techniques.
+            </p>
+          </div>
+
+          <div style="margin-bottom: 12px">
+            <strong style="color: var(--primary)">Other Omics (20%):</strong>
+            <p style="font-size: 14px; margin-top: 4px">
+              Currently working on some side-projects with Perturb-seq data and
+              metabolomics data (as of Feb 2026).
+            </p>
+          </div>
+
+          <div style="margin-bottom: 12px">
+            <strong style="color: var(--primary)"
+              >Unix/Docker/Git (75%):</strong
+            >
+            <p style="font-size: 14px; margin-top: 4px">
+              Proficient in command line, version control, containerization for
+              research workflows, but not a systems administrator.
+            </p>
+          </div>
+        </div>
+
+        <div
+          style="
+            margin-top: 20px;
+            padding-top: 16px;
+            border-top: 1px solid var(--primary);
+            opacity: 0.3;
+          "
+        >
+          <p style="font-size: 12px; opacity: 0.7">
+            <em
+              >Skills are self-assessed based on years of experience, project
+              complexity, and professional application.</em
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    
+    <div id="coreAbilitiesModal" class="help-modal">
+      <div class="help-modal-content">
+        <button class="help-close" onclick="hideCoreAbilitiesModal()">
+          &times;
+        </button>
+        <h3
+          style="
+            margin-bottom: 16px;
+            color: var(--primary);
+            font-size: 18px;
+            font-weight: bold;
+          "
+        >
+          Core Abilities Scale Explanation
+        </h3>
+
+        <div>
+          <div
+            style="
+              margin-bottom: 16px;
+              padding: 12px;
+              background-color: var(--card);
+              border-left: 3px solid var(--primary);
+            "
+          >
+            <strong style="color: var(--primary); font-size: 16px"
+              >Scale Reference Points:</strong
+            >
+            <ul style="margin-top: 8px; padding-left: 20px">
+              <li style="margin-bottom: 4px">
+                <strong>5/10:</strong> Rough estimate of the average 1st year
+                PhD student in a decent CompBio program (like Duke CBB)
+              </li>
+              <li>
+                <strong>8/10:</strong> My target value when I graduate from PhD
+              </li>
+            </ul>
+          </div>
+
+          <div style="margin-bottom: 12px">
+            <strong style="color: var(--primary)"
+              >Current Assessment (2025):</strong
+            >
+            <p style="font-size: 14px; margin-top: 4px">
+              Based on my current research experience, coursework completion,
+              and practical application in projects.
+            </p>
+          </div>
+
+          <div style="margin-bottom: 12px">
+            <strong style="color: var(--primary)"
+              >Target Profile (Aug 2026):</strong
+            >
+            <p style="font-size: 14px; margin-top: 4px">
+              Expected competency levels after completing additional research
+              projects, advanced coursework, and gaining more hands-on
+              experience in computational biology.
+            </p>
+          </div>
+        </div>
+
+        <div
+          style="
+            margin-top: 20px;
+            padding-top: 16px;
+            border-top: 1px solid var(--primary);
+            opacity: 0.3;
+          "
+        >
+          <p style="font-size: 12px; opacity: 0.7">
+            <em
+              >This radar chart represents a self-assessment relative to
+              academic benchmarks in computational biology.</em
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    
+    
+    <script src="/js/resume-modals.min.js"></script>
+
+    
+    <script src="/js/resume-theme.min.js"></script>
+
+    
+    <script src="/js/resume-navigation.min.js"></script>
+
+    
+    <script src="/js/resume-charts.min.js"></script>
+
+    
+    <script>
+      (function() {
+        
+        document.addEventListener('keydown', function(e) {
+          if (e.key === 'F12' || 
+              (e.ctrlKey && e.shiftKey && e.key === 'I') ||
+              (e.ctrlKey && e.key === 'U')) {
+            e.preventDefault();
+            return false;
+          }
+        });
+        
+        
+        document.addEventListener('contextmenu', e => e.preventDefault());
+        
+        
+        if (window.console) {
+          const fakeLog = () => console.info('%cProtected content - unauthorized access logged', 'color: red; font-weight: bold;');
+          window.console.log = fakeLog;
+          window.console.warn = fakeLog;
+        }
+        
+        
+        let devtools = {open: false, timer: null};
+        const detect = () => {
+          if (window.outerHeight - window.innerHeight > 200 || 
+              window.outerWidth - window.innerWidth > 200) {
+            if (!devtools.open) {
+              devtools.open = true;
+              
+              fetch('/api/security-log', {method: 'POST', body: 'devtools-detected'}).catch(() => {});
+            }
+          } else {
+            devtools.open = false;
+          }
+        };
+        setInterval(detect, 1000);
+        
+        
+        window.gtag = () => {};
+        window.dataLayer = [];
+      })();
+    </script>
+  </body>
+</html>
