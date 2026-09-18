@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data De-Noising on Zion Sheng</title>
+    <link>https://zs144.github.io/tags/data-de-noising/</link>
+    <description>Recent content in Data De-Noising on Zion Sheng</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 04 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://zs144.github.io/tags/data-de-noising/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PinFuse: An Algorithm for Denoising Spatial Transcriptomics [Ongoing]</title>
+      <link>https://zs144.github.io/research/project-six/</link>
+      <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://zs144.github.io/research/project-six/</guid>
+      <description>PinFuse reduces noise in spatial transcriptomics data, allowing users to recover higher-fidelity gene expression signals and achieve more accurate downstream analyses.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Machine-Learning on Zion Sheng</title>
+    <link>https://zs144.github.io/tags/machine-learning/</link>
+    <description>Recent content in Machine-Learning on Zion Sheng</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 23 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://zs144.github.io/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Estimating Global, High-resolution Onsite Building Emissions</title>
+      <link>https://zs144.github.io/research/project-two/</link>
+      <pubDate>Mon, 23 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://zs144.github.io/research/project-two/</guid>
+      <description>Developed a high-resolution global greenhouse gas emissions dataset for the building sector by spatially and temporally disaggregating EDGAR, enabling fine-grained emissions analysis across regions and time.</description>
+    </item>
+  </channel>
+</rss>

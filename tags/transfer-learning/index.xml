@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Transfer Learning on Zion Sheng</title>
+    <link>https://zs144.github.io/tags/transfer-learning/</link>
+    <description>Recent content in Transfer Learning on Zion Sheng</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 15 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://zs144.github.io/tags/transfer-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Is Self-Supervised Pre-training on Satellite Imagery Better than ImageNet? A Systematic Study with Sentinel-2</title>
+      <link>https://zs144.github.io/research/project-one/</link>
+      <pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://zs144.github.io/research/project-one/</guid>
+      <description>Systematically evaluated self-supervised pre-training on in-domain versus out-of-domain foundational datasets for downstream tasks in satellite imagery.</description>
+    </item>
+  </channel>
+</rss>
